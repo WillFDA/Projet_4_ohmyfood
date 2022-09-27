@@ -7,22 +7,55 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body> 
+<main class="container">
     <header>
         <h1 class="logo">ohmyfood</h1>  
     </header>
-     <section class="hero flex">
+     <section class="hero_section flex">
         <h2>Réservez le menu qui vous convient</h2>
-        <h3>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h3>
-        <button class="btn btn_explore"></button>  
+        <p class="hero_p">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <button class="btn_explore">
+        <h4>Explorer nos restaurants</h4>
+        </button>  
      </section>
 
-     <section>
-        
+     <section class="functions_section flex">
+        <button class="btn_functions">
+            <h4>Choisissez un restaurant</h4>
+        </button>
+        <button class="btn_functions">
+            <h4>Composez votre menu </h4>
+        </button>
+        <button class="btn_functions">
+            <h4>Dégustez au restaurant</h4>
+        </button>
      </section>
-    
+     <section class="all_restaurants">
+        <div class="card flex">
+            <a href="#">
+                <img src="" alt="">
+                <div class="card_info flex">
+                    <h2 class="card_title">La palette du goût</h2> 
+                    <p class="card_p">Ménilmontant</p>
+                </div>
+            </a>
+        </div>
+     </section>
+</main>
+     <footer class="flex">
+        <h1 class="footer_logo">ohmyfood</h1>
+        <div class="footer_h4_container">
+            <h4>Proposer un restaurant</h4>
+        </div>
+        <div class="footer_h4_container">
+            <h4>Devenir partenaire</h4>
+        </div>
+        <h4 class="footer_h4">Devenir partenaire</h4>
+        <h4 class="footer_h4">Contact</h4>
+     </footer>
 </body>
 </html>
