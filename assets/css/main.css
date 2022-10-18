@@ -205,7 +205,8 @@ a:active {
   color: black;
   font-size: 17px;
 }
-.card__info--btn i {
+.card__info--heart i {
+  border: 2px solid black;
   font-size: 21px;
 }
 
