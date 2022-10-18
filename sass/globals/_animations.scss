@@ -1,0 +1,55 @@
+@mixin afters {
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+}
+
+$btn-border-radius:25px;
+
+.list__element {
+    position: relative;
+
+    &:hover {
+        .list__element--icon {
+            transition: color 250ms;
+            color: $colour-primary;
+        }
+
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:"";
+        @include afters;
+        border-radius: 20px;
+        background-color: $colour-primary-lighten;
+        transition: opacity 250ms;
+    };
+}
+
+.hero__btn {
+    position: relative;
+    transition: all 250ms;
+    z-index: 1;
+    &:hover {
+        &::after{
+            opacity: 0.15;
+        }
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    }
+    &::after {
+        @include afters;
+        background-color: white;
+        border-radius: $btn-border-radius;
+
+    }
+}
+
+

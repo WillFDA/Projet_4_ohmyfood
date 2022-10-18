@@ -11,8 +11,8 @@
     <title>Document</title>
 </head>
 <body> 
-    <header class="flex text_center">
-        <h1>ohmyfood</h1>  
+    <header class="header flex text_center">
+        <h1 class="header__logo">ohmyfood</h1>  
     </header>
 <main class="container">
     <section class="local flex text_center row">
@@ -23,9 +23,7 @@
         <h2 class="hero__title">Réservez le menu qui vous convient</h2>
         <p class="hero__desc">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
         <button class="flex hero__btn">
-                    <a href="#">
-                    <h4>Explorer nos restaurants</h4>
-                    </a>
+            <span class="hero__btn--title">Explorer nos restaurants</span>
         </button>  
      </section>
 
@@ -50,13 +48,13 @@
      <section class="restaurants flex">
             <div class="card flex">
                 <a href="">
-                    <img src="assets/palettedugout.jpg" alt="">
-                    <div class="card__info-container flex">
-                        <div class="card__info flex">
+                    <img src="./assets/images/palettedugout.jpg" alt="">
+                    <div class="card__info flex">
+                        <div class="card__info--box flex">
                             <h2>La palette du goût</h2> 
                             <p>Ménilmontant</p>
                         </div>
-                        <div class="card__btn">
+                        <div class="card__info--btn">
                             <i class="fa-regular fa-heart"></i>
                         </div>
                     </div>
@@ -64,13 +62,13 @@
             </div>
      </section>
 </main>
-     <footer class="flex">
+     <footer class="footer flex">
         <h1 class="">ohmyfood</h1>
-        <div class="footer_icon-text flex row">
+        <div class="footer__icon--text flex row">
             <i class="footer_icon-text fa-solid fa-utensils"></i>
             <h4>Proposer un restaurant</h4>
         </div>
-        <div class="footer_icon-text flex row">
+        <div class="footer__icon--text flex row">
             <i class="fa-solid fa-handshake-angle"></i>
             <h4>Devenir partenaire</h4>
         </div>

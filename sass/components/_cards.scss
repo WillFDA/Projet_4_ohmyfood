@@ -1,0 +1,37 @@
+.card {
+    flex-direction: column;
+    border-radius: 15px;
+    background: #FFFFFF;
+    width: 100%;
+    img {
+        object-fit: cover;
+        height:231px;
+        width:100%;
+        border-radius: 20px 20px 0px 0px;
+    }       
+}
+
+.card__info {
+    padding: 5px 13px 12px 13px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &--box {
+        flex-direction: column;
+        border-radius: 0px 0px 20px 20px;
+
+        h2 {
+            color: black;
+            font-size: 1.125rem;
+        }
+        p {
+            color: black;
+            font-size: 17px;
+        }
+    }
+    &--btn {
+        i {
+            font-size: 21px;
+        }
+    }
+}
