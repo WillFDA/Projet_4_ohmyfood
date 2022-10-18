@@ -1,0 +1,33 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color:$background-color;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+}
+
+.text_center {
+    width: 100%;
+    justify-content: center;
+}
+
+main {
+    margin: auto;
+}

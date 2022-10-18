@@ -3,65 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/44d3f60ba9.js" crossorigin="anonymous"></script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body> 
-<main class="container">
     <header class="flex text_center">
         <h1>ohmyfood</h1>  
     </header>
-     <section class="hero flex">
-        <div class="location flex text_center">
+<main class="container">
+    <section class="local flex text_center row">
+            <i class="fa-solid fa-location-dot"></i>
             <h4 class="">Paris, Belleville</h4>
-        </div>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <button class="flex">
-                    <a href="">
+    </section>
+     <section class="hero flex">
+        <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+        <p class="hero__desc">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <button class="flex hero__btn">
+                    <a href="#">
                     <h4>Explorer nos restaurants</h4>
                     </a>
-                </button>  
+        </button>  
      </section>
 
-     <section class="fonctionnement flex">
-        <div class="container flex">
-            <button>
+     <section class="tutorial flex">
+        <h2>Fonctionnement</h2>
+        <ol class="list flex">
+            <li class="flex row list__element">
+                <i class="list__element--icon fa-solid fa-mobile-screen-button"></i>
                 <h4>Choisissez un restaurant</h4>
-            </button>
-            <button>
+            </li>
+            <li class="flex row list__element">
+                <i class="list__element--icon fa-solid fa-list-ul"></i>
                 <h4>Composez votre menu</h4>
-            </button>
-            <button>
+            </li>
+            <li class="flex row list__element">
+                <i class="list__element--icon fa-solid fa-store"></i>
                 <h4>Dégustez au restaurant</h4>
-            </button>
-        </div>
+            </li>
+        </ol>
      </section>
-     <section class="all_restaurants">
-        <div class="card flex">
-            <a href="#">
-                <img src="" alt="">
-                <div class="card_info">
-                    <h2>La palette du goût</h2> 
-                    <p>Ménilmontant</p>
-                </div>
-            </a>
-        </div>
+
+     <section class="restaurants flex">
+            <div class="card flex">
+                <a href="">
+                    <img src="assets/palettedugout.jpg" alt="">
+                    <div class="card__info-container flex">
+                        <div class="card__info flex">
+                            <h2>La palette du goût</h2> 
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="card__btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
      </section>
 </main>
      <footer class="flex">
         <h1 class="">ohmyfood</h1>
-        <div>
+        <div class="footer_icon-text flex row">
+            <i class="footer_icon-text fa-solid fa-utensils"></i>
             <h4>Proposer un restaurant</h4>
         </div>
-        <div>
+        <div class="footer_icon-text flex row">
+            <i class="fa-solid fa-handshake-angle"></i>
             <h4>Devenir partenaire</h4>
         </div>
-        <h4 class="">Devenir partenaire</h4>
+        <h4 class="">Mentions légales</h4>
         <h4 class="">Contact</h4>
      </footer>
 </body>

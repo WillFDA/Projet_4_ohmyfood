@@ -1,0 +1,23 @@
+$font:'Roboto', sans-serif;
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-size:1.875rem; ;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: $font;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+a, 
+a:visited, 
+a:active {
+    text-decoration: none;
+}
