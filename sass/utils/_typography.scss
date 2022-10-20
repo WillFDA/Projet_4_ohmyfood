@@ -1,9 +1,27 @@
 $font:'Roboto', sans-serif;
+$logo:'Shrikhand', cursive;
+
+@mixin logo($size, $color) {
+    font-family: $logo;
+    font-weight: 400;
+    font-size: $size;
+    color:$color;
+}
+
+@mixin font ($size, $color, $weight) {
+    font-family:$font;
+    font-weight: $weight;
+    color: $color;
+    font-size: $size;
+    line-height: 1.1; 
+}
 
 h1 {
-    font-family: 'Shrikhand', cursive;
-    font-weight: 400;
-    font-size:1.875rem; ;
+    @include logo(1.875rem,black);
+}
+
+.footer__logo {
+    @include logo(18px,white);
 }
 
 h2,
@@ -20,4 +38,25 @@ a,
 a:visited, 
 a:active {
     text-decoration: none;
+}
+
+.footer__link {
+    @include font (1rem,white,500)
+}
+
+.hero__title {
+    @include font (24px,black,700)
+}
+
+.hero__desc {
+    @include font (18px,$footer-background,300)
+}
+
+.details__title {
+    @include font(18px,black,500);
+    margin-bottom:0.3rem; 
+}
+
+.details__subtitle {
+    @include font (15,black,300);
 }

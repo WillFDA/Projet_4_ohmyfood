@@ -11,46 +11,48 @@
     <title>Document</title>
 </head>
 <body> 
-    <header class="header flex text_center">
+    <header class="header">
         <h1 class="header__logo">ohmyfood</h1>  
     </header>
 <main class="container">
-    <section class="local flex text_center row">
+
+    <section class="local">
             <i class="fa-solid fa-location-dot"></i>
             <h4 class="">Paris, Belleville</h4>
     </section>
-     <section class="hero flex">
+
+     <section class="hero">
         <h2 class="hero__title">Réservez le menu qui vous convient</h2>
         <p class="hero__desc">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <button class="flex hero__btn">
+        <button class="hero__btn">
             <span class="hero__btn--title">Explorer nos restaurants</span>
         </button>  
      </section>
 
-     <section class="tutorial flex">
+     <section class="tutorial">
         <h2>Fonctionnement</h2>
-        <ol class="list flex">
-            <li class="flex row list__element">
+        <ol class="list">
+            <li class="list__element">
                 <i class="list__element--icon fa-solid fa-mobile-screen-button"></i>
-                <h4>Choisissez un restaurant</h4>
+                <span class="list__element--title">Choisissez un restaurant</span>
             </li>
-            <li class="flex row list__element">
+            <li class="list__element">
                 <i class="list__element--icon fa-solid fa-list-ul"></i>
                 <h4>Composez votre menu</h4>
             </li>
-            <li class="flex row list__element">
+            <li class="list__element">
                 <i class="list__element--icon fa-solid fa-store"></i>
                 <h4>Dégustez au restaurant</h4>
             </li>
         </ol>
      </section>
 
-     <section class="restaurants flex">
-            <div class="card flex">
+     <section class="restaurants">
+            <div class="card">
                 <a href="">
                     <img src="./assets/images/palettedugout.jpg" alt="">
-                    <div class="card__info flex">
-                        <div class="card__info--box flex">
+                    <div class="card__info">
+                        <div class="card__info--box">
                             <h2>La palette du goût</h2> 
                             <p>Ménilmontant</p>
                         </div>
@@ -62,18 +64,34 @@
             </div>
      </section>
 </main>
-     <footer class="footer flex">
-        <h1 class="">ohmyfood</h1>
-        <div class="footer__icon--text flex row">
-            <i class="footer_icon-text fa-solid fa-utensils"></i>
-            <h4>Proposer un restaurant</h4>
-        </div>
-        <div class="footer__icon--text flex row">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <h4>Devenir partenaire</h4>
-        </div>
-        <h4 class="">Mentions légales</h4>
-        <h4 class="">Contact</h4>
+     <footer class="footer">
+        <div class="footer__container">
+            <span class="footer__logo">ohmyfood</span>
+            <ul>
+                <li class="footer_list">
+                    <a class="footer__link" href="">
+                        <i class="footer__link--icon fa-solid fa-utensils"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="">
+                        <i class="footer__link--icon fa-solid fa-handshake-angle"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="" class="footer__link">
+                        Mentions légales
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="" class="footer__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+         </div>
      </footer>
 </body>
 </html>

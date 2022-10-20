@@ -15,19 +15,6 @@ body {
     background-color:$background-color;
 }
 
-.row {
-    flex-direction: row;
-}
-
-.flex {
-    display: flex;
-}
-
-.text_center {
-    width: 100%;
-    justify-content: center;
-}
-
 main {
     margin: auto;
 }
@@ -35,7 +22,6 @@ main {
 .restaurants {
     padding: 54px 17px 64px 17px;
 }
-
-footer {
-    padding: 22px 25px 33px 25px;
+li, ul, ol {
+    list-style: none;
 }
