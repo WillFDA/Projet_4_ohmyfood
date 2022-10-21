@@ -1,21 +1,5 @@
 $font:'Roboto', sans-serif;
 $logo:'Shrikhand', cursive;
-
-@mixin logo($size, $color) {
-    font-family: $logo;
-    font-weight: 400;
-    font-size: $size;
-    color:$color;
-}
-
-@mixin font ($size, $color, $weight) {
-    font-family:$font;
-    font-weight: $weight;
-    color: $color;
-    font-size: $size;
-    line-height: 1.1; 
-}
-
 h1 {
     @include logo(1.875rem,black);
 }
