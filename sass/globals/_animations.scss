@@ -37,6 +37,23 @@
     }
 }
 
+.submenu__btn {
+    position: relative;
+    transition: all 250ms;
+    z-index: 1;
+    &:hover {
+        &::after{
+            opacity: 0.15;
+        }
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    }
+    &::after {
+        @include afters;
+        background-color: white;
+        border-radius: $btn-border-radius;
+    }
+}
+
 .submenu__item:hover {
     .submenu__price {
         transform:translateX(0rem);

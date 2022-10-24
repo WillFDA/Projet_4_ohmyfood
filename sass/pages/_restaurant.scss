@@ -43,16 +43,15 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-bottom:44px;
-        i {
-            font-size: 21px;
-        }
+        padding-bottom:1rem;
     }
 }
 
 .submenu {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
     &__title {
         position: relative;
         margin-bottom: 20px;
@@ -71,7 +70,6 @@
         background: #FFFFFF;
         padding: 1rem;
         border-radius: 15px;
-        margin: 1rem 0;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         cursor: pointer;

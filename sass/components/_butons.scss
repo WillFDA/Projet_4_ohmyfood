@@ -1,10 +1,15 @@
 .hero__btn {
     @include btn;
     &--title {
-        margin: 13px 18.75px;
         color: white;
-        font-family: $font;
-        font-weight: 500;
-        font-size: 1rem;
+        @include font (1rem,white,500)
+    }
+}
+
+.submenu__btn {
+    @include btn;
+    &--title {
+        margin: 0 1rem;
+        @include font (1rem,white,500)
     }
 }

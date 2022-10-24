@@ -4,6 +4,9 @@ h1 {
     @include logo(1.875rem,black);
 }
 
+.menu__title {
+    @include logo(1.875rem,black);
+}
 .footer__logo {
     @include logo(18px,white);
 }
@@ -22,6 +25,10 @@ a,
 a:visited, 
 a:active {
     text-decoration: none;
+}
+
+.submenu__title {
+    @include font (1rem,black,300)
 }
 
 .footer__link {
