@@ -38,14 +38,23 @@
 }
 
 .submenu__item:hover {
+    .submenu__price {
+        transform:translateX(0rem);
+    }
     .submenu__checkbox {
-        transform: translateX(-1rem);
+       transform:translateX(0rem);
     }
     .checkbox__wrapper {
         transform: rotate(0);
     }
 }
 
-.submenu__checkbox {
-    transition-duration: .5ms;
+.like__btn:hover {
+
+    .like__btn--nobg {
+        opacity: 0;
+    }
+    .like__btn--bg {
+        opacity: 1;
+    }
 }

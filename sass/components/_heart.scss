@@ -1,0 +1,22 @@
+.like__btn {
+    cursor: pointer;
+    position: relative;
+    font-size: 0.8rem;
+    // transition: opacity 2s;
+    &--nobg {
+        transition: opacity 0.5s;
+        opacity: 1;
+        color:black;
+    }
+    &--bg {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient($btn-gradient);
+        -webkit-background-clip: text;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity:0;
+        transition: opacity 0.5s;
+    }
+}

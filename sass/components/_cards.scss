@@ -13,8 +13,9 @@
 }
 
 .card__info {
+    position: relative;
     display: flex;
-    padding: 5px 13px 12px 13px;
+    padding: 0.8rem 1rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -32,10 +33,5 @@
             font-size: 16px;
         }
     }
-    &--heart {
-        i {
-            border: 2px solid black;
-            font-size: 21px;
-        }
-    }
 }
+

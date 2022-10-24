@@ -97,6 +97,28 @@ a:active {
   line-height: 1.1;
 }
 
+.like__btn {
+  cursor: pointer;
+  position: relative;
+  font-size: 0.8rem;
+}
+.like__btn--nobg {
+  transition: opacity 0.5s;
+  opacity: 1;
+  color: black;
+}
+.like__btn--bg {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -243,8 +265,9 @@ a:active {
 }
 
 .card__info {
+  position: relative;
   display: flex;
-  padding: 5px 13px 12px 13px;
+  padding: 0.8rem 1rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -262,9 +285,22 @@ a:active {
   color: black;
   font-size: 16px;
 }
-.card__info--heart i {
-  border: 2px solid black;
-  font-size: 21px;
+
+.header__restaurants {
+  position: relative;
+}
+.header__restaurants--arrow {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.2rem;
+  transform: translateY(-50%);
 }
 
 .menu {
@@ -326,8 +362,6 @@ a:active {
   border-radius: 15px;
   margin: 1rem 0;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  flex-direction: row;
-  justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
@@ -341,16 +375,19 @@ a:active {
   font-size: 15px;
   line-height: 1.1;
   align-items: flex-end;
+  justify-content: flex-end;
+  transform: translateX(4rem);
+  transition-duration: 0.5s;
 }
 .submenu__checkbox {
+  background-color: #99E2D0;
+  margin: -1rem -1rem -1rem 1rem;
+  width: 4rem;
   display: flex;
   align-items: center;
-  background-color: #99E2D0;
   justify-content: center;
-  margin: -1rem -2rem -1rem 1rem;
   transform: translateX(4rem);
-  transition: 0.5s;
-  width: 4rem;
+  transition-duration: 0.5s;
 }
 
 .checkbox__wrapper {
@@ -369,9 +406,20 @@ a:active {
 }
 
 .details {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.details__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.details__subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .list__element {
@@ -425,15 +473,21 @@ a:active {
   border-radius: 25px;
 }
 
+.submenu__item:hover .submenu__price {
+  transform: translateX(0rem);
+}
 .submenu__item:hover .submenu__checkbox {
-  transform: translateX(-1rem);
+  transform: translateX(0rem);
 }
 .submenu__item:hover .checkbox__wrapper {
   transform: rotate(0);
 }
 
-.submenu__checkbox {
-  transition-duration: 0.5ms;
+.like__btn:hover .like__btn--nobg {
+  opacity: 0;
+}
+.like__btn:hover .like__btn--bg {
+  opacity: 1;
 }
 
 .hero__btn {

@@ -1,3 +1,20 @@
+.header__restaurants {
+    position: relative;
+    &--arrow {
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 1.2rem;
+        transform: translateY(-50%);
+    }
+
+}
 
 .menu {
     margin: auto;
@@ -56,8 +73,6 @@
         border-radius: 15px;
         margin: 1rem 0;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        flex-direction: row;
-        justify-content: space-between;
         overflow: hidden;
         cursor: pointer;
         max-width: 100%;
@@ -67,16 +82,20 @@
         padding-left: 0.5rem;
         @include font (15px,#353535,700);
         align-items:flex-end;
+        justify-content: flex-end;
+        transform: translateX(4rem);
+        transition-duration: 0.5s;
     }
     &__checkbox {
+        background-color: $colour-secondary;
+        margin: -1rem -1rem -1rem 1rem;
+        width: 4rem;
         display: flex;
         align-items: center;
-        background-color: $colour-secondary;
         justify-content: center;
-        margin: -1rem -2rem -1rem 1rem;
         transform: translateX(4rem);
-        transition: 0.5s;
-        width: 4rem;
+        transition-duration: 0.5s;
+        
     }
 }
 
@@ -97,7 +116,18 @@
 
 
 .details {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    &__title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__subtitle {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
