@@ -10,13 +10,17 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.body__homepage {
     font-family:'Roboto', sans-serif;
     background-color:$background-color;
+}
+body {
+    background-color: white;
 }
 
 main {
     margin: auto;
+    // overflow-x: hidden;
 }
 
 .restaurants {
@@ -24,4 +28,11 @@ main {
 }
 li, ul, ol {
     list-style: none;
+}
+
+.tutorial__container {
+    @include desktop-only {
+        max-width: 1200px;
+        margin: auto;
+    }
 }

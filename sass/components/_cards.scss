@@ -4,12 +4,23 @@
     border-radius: 15px;
     background: #FFFFFF;
     width: 100%;
+    position: relative;
     img {
         object-fit: cover;
         height:231px;
         width:100%;
         border-radius: 20px 20px 0px 0px;
-    }       
+    } 
+    &__sticker {
+        background-color: $colour-secondary;
+        padding: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.8rem;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        @include font (0.9rem,$colour-secondary-darken,500)
+    }     
 }
 
 .card__info {
@@ -23,14 +34,12 @@
         display: flex;
         flex-direction: column;
         border-radius: 0px 0px 20px 20px;
-
-        h2 {
-            color: black;
-            font-size: 1.125rem;
-        }
-        p {
-            color: black;
-            font-size: 16px;
-        }
+    }
+    &--title {
+        @include font (1.125rem,black,700);
+        margin-bottom: 0.2rem;
+    }
+    &--subtitle {
+        @include font (1rem,black,300)
     }
 }

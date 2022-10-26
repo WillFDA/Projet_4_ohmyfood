@@ -75,3 +75,17 @@
         opacity: 1;
     }
 }
+
+@keyframes submenuItemAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-4rem);
+    //   transform: scale(0)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    //   transform: scale(1);
+    }
+  }
+  

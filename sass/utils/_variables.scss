@@ -13,12 +13,12 @@
     line-height: 1.1; 
 }
 
-@mixin btn {
+@mixin btn ($margin-bottom){
     display: flex;
     cursor: pointer;
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: $margin-bottom;
     padding: 1rem 1.3rem;
     justify-content: center;
     border: none;
@@ -39,24 +39,19 @@
     transition: opacity 250ms;
 }
 
-@mixin animation_btn ($name) {
-    .#{$name}__btn {
-        position: relative;
-        transition: all 250ms;
-        z-index: 1;
-        &:hover {
-            &::after{
-                opacity: 0.15;
-            }
-            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-        }
-        &::after {
-            @include afters;
-            background-color: white;
-            border-radius: $btn-border-radius;
-        }
+@mixin animation ($animationName,$duration){
+    animation-name: $animationName;
+    animation-timing-function: cubic-bezier(0,.59,.13,1);
+    opacity: 0;
+    transform: translateY(0);
+    animation-duration:$duration;
+    animation-fill-mode: both;
+}
+
+@mixin desktop-only {
+    @media only screen and (min-width: 994px) {
+        @content;
     }
-    
 }
 
 $btn-border-radius:25px;
