@@ -5,6 +5,10 @@
     background: #FFFFFF;
     width: 100%;
     position: relative;
+    @include desktop-only {
+        flex: 0 0 auto;
+        width: 30%;
+    }
     img {
         object-fit: cover;
         height:231px;

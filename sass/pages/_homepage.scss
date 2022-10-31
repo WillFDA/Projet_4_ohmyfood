@@ -1,3 +1,51 @@
+$size: 3vh;
+$num-bars:5;
+$anim-duration:500ms;
+$anim-delay: $anim-duration / $num-bars;
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.90);
+    z-index: 999999999;
+    animation: loader 0.01s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+   
+    &__container {
+        width: $size*10;
+        height: $size*7.5;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__item {
+        height: 100%;
+        width: $size;
+        animation: bars $anim-duration backwards infinite ease-in-out alternate;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+
+    &__item--1 {
+        background-color: $colour-primary;
+    }
+    &__item--2 {
+        background-color: $colour-secondary;
+    }
+    &__item--3 {
+        background-color: $colour-tertiary;
+    }
+}
+
+
 .header {
     display: flex;
     width: 100%;
@@ -133,11 +181,11 @@
     &--cards {
         display: flex;
         flex-direction: column;
-        gap:1rem;
+        gap:2rem;
         @include desktop-only {
             flex-direction: row;
             flex-wrap: nowrap;
-            width: 120%;
+            overflow-x: auto;
         }
     }
 }
