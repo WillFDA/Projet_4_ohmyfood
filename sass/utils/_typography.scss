@@ -49,5 +49,5 @@ a:active {
 }
 
 .details__subtitle {
-    @include font (15,black,300);
+    @include font (15px,black,300);
 }
