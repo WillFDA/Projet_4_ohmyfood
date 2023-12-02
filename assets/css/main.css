@@ -579,7 +579,7 @@ a:active {
   line-height: 1.1;
   align-items: flex-end;
   justify-content: flex-end;
-  margin-right: 4rem;
+  margin-right: -4rem;
   transition-duration: 0.5s;
 }
 .submenu__checkbox {
