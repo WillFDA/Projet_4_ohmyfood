@@ -579,7 +579,7 @@ a:active {
   line-height: 1.1;
   align-items: flex-end;
   justify-content: flex-end;
-  transform: translateX(4rem);
+  margin-right: 4rem;
   transition-duration: 0.5s;
 }
 .submenu__checkbox {
@@ -615,6 +615,7 @@ a:active {
   justify-content: flex-start;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .details__title {
   text-overflow: ellipsis;
@@ -702,7 +703,7 @@ a:active {
 }
 
 .submenu__item:hover .submenu__price {
-  transform: translateX(0rem);
+  margin-right: 0rem;
 }
 .submenu__item:hover .submenu__checkbox {
   transform: translateX(0rem);
